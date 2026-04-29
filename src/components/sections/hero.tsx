@@ -33,8 +33,8 @@ export function Hero() {
           className="absolute inset-0 w-full h-full object-cover"
         />
         {/* Olive Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-accent/70 via-primary/40 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-r from-accent/70 via-primary/40 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-background/50 via-transparent to-transparent" />
       </motion.div>
 
       {/* Content */}
@@ -105,7 +105,7 @@ export function Hero() {
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 1.5, repeat: Infinity }}
-          className="w-px h-12 bg-gradient-to-b from-primary-foreground/60 to-transparent"
+          className="w-px h-12 bg-linear-to-b from-primary-foreground/60 to-transparent"
         />
       </motion.div>
     </section>

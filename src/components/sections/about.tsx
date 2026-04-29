@@ -27,7 +27,7 @@ export function About() {
             className="absolute inset-0 w-full h-full overflow-hidden"
           >
             <img
-              src="/images/about-main.jpg"
+              src="public/images/about-main.jpg"
               alt="Casa Mithi Villa"
               className="w-full h-full object-cover will-change-transform"
             />
