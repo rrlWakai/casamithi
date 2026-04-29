@@ -118,7 +118,7 @@ export function Gallery() {
       id="gallery"
       className="py-24 md:py-32 lg:py-48 px-4 md:px-8 lg:px-16 overflow-hidden"
     >
-      <div className="max-w-[1600px] mx-auto">
+      <div className="max-w-1600px mx-auto">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -141,7 +141,7 @@ export function Gallery() {
           <GalleryImage
             src={galleryImages[0].src}
             alt={galleryImages[0].alt}
-            className="col-span-2 row-span-2 aspect-[4/3]"
+            className="col-span-2 row-span-2 aspect-4/3"
             parallaxSpeed={0.3}
           />
           <GalleryImage
@@ -153,7 +153,7 @@ export function Gallery() {
           <GalleryImage
             src={galleryImages[2].src}
             alt={galleryImages[2].alt}
-            className="row-span-2 aspect-[3/4]"
+            className="row-span-2 aspect-3/4"
             parallaxSpeed={0.8}
           />
 
@@ -178,19 +178,19 @@ export function Gallery() {
           <GalleryImage
             src={galleryImages[5].src}
             alt={galleryImages[5].alt}
-            className="aspect-[4/3]"
+            className="aspect-4/3"
             parallaxSpeed={0.7}
           />
           <GalleryImage
             src={galleryImages[4].src}
             alt={galleryImages[4].alt}
-            className="col-span-2 aspect-[16/9]"
+            className="col-span-2 aspect-video"
             parallaxSpeed={0.5}
           />
           <GalleryImage
             src={galleryImages[6].src}
             alt={galleryImages[6].alt}
-            className="row-span-2 aspect-[3/5]"
+            className="row-span-2 aspect-3/5"
             parallaxSpeed={0.4}
           />
 
@@ -198,7 +198,7 @@ export function Gallery() {
           <GalleryImage
             src={galleryImages[7].src}
             alt={galleryImages[7].alt}
-            className="col-span-2 aspect-[2/1]"
+            className="col-span-2 aspect-2/1"
             parallaxSpeed={0.6}
           />
           <GalleryImage
@@ -212,7 +212,7 @@ export function Gallery() {
           <GalleryImage
             src={galleryImages[9].src}
             alt={galleryImages[9].alt}
-            className="aspect-[3/4]"
+            className="aspect-3/4"
             parallaxSpeed={0.8}
           />
           <GalleryImage
@@ -224,7 +224,7 @@ export function Gallery() {
           <GalleryImage
             src={galleryImages[11].src}
             alt={galleryImages[11].alt}
-            className="aspect-[4/5]"
+            className="aspect-4/5"
             parallaxSpeed={0.6}
           />
         </div>
@@ -234,7 +234,7 @@ export function Gallery() {
           <GalleryImage
             src={galleryImages[0].src}
             alt={galleryImages[0].alt}
-            className="col-span-2 aspect-[16/9]"
+            className="col-span-2 aspect-video"
             parallaxSpeed={0.3}
           />
           <GalleryImage
@@ -246,19 +246,19 @@ export function Gallery() {
           <GalleryImage
             src={galleryImages[2].src}
             alt={galleryImages[2].alt}
-            className="row-span-2 aspect-[3/4]"
+            className="row-span-2 aspect-3/4"
             parallaxSpeed={0.6}
           />
           <GalleryImage
             src={galleryImages[3].src}
             alt={galleryImages[3].alt}
-            className="aspect-[4/3]"
+            className="aspect-4/3"
             parallaxSpeed={0.4}
           />
           <GalleryImage
             src={galleryImages[4].src}
             alt={galleryImages[4].alt}
-            className="col-span-2 aspect-[2/1]"
+            className="col-span-2 aspect-2/1"
             parallaxSpeed={0.5}
           />
           <GalleryImage
@@ -270,13 +270,13 @@ export function Gallery() {
           <GalleryImage
             src={galleryImages[6].src}
             alt={galleryImages[6].alt}
-            className="aspect-[3/4]"
+            className="aspect-3/4"
             parallaxSpeed={0.4}
           />
           <GalleryImage
             src={galleryImages[7].src}
             alt={galleryImages[7].alt}
-            className="col-span-2 aspect-[16/9]"
+            className="col-span-2 aspect-video"
             parallaxSpeed={0.6}
           />
         </div>
@@ -286,7 +286,7 @@ export function Gallery() {
           <GalleryImage
             src={galleryImages[0].src}
             alt={galleryImages[0].alt}
-            className="aspect-[4/3]"
+            className="aspect-4/3"
             parallaxSpeed={0.3}
           />
           <div className="grid grid-cols-2 gap-4">
@@ -306,33 +306,33 @@ export function Gallery() {
           <GalleryImage
             src={galleryImages[2].src}
             alt={galleryImages[2].alt}
-            className="aspect-[3/4]"
+            className="aspect-3/4"
             parallaxSpeed={0.6}
           />
           <GalleryImage
             src={galleryImages[4].src}
             alt={galleryImages[4].alt}
-            className="aspect-[16/9]"
+            className="aspect-video"
             parallaxSpeed={0.5}
           />
           <div className="grid grid-cols-2 gap-4">
             <GalleryImage
               src={galleryImages[5].src}
               alt={galleryImages[5].alt}
-              className="aspect-[3/4]"
+              className="aspect-3/4"
               parallaxSpeed={0.7}
             />
             <GalleryImage
               src={galleryImages[6].src}
               alt={galleryImages[6].alt}
-              className="aspect-[3/4]"
+              className="aspect-3/4"
               parallaxSpeed={0.4}
             />
           </div>
           <GalleryImage
             src={galleryImages[7].src}
             alt={galleryImages[7].alt}
-            className="aspect-[4/3]"
+            className="aspect-4/3"
             parallaxSpeed={0.6}
           />
         </div>

@@ -26,7 +26,7 @@ const testimonials = [
 export function Testimonials() {
   return (
     <section className="py-24 md:py-32 lg:py-48 px-6 md:px-12 lg:px-24">
-      <div className="max-w-[1400px] mx-auto">
+      <div className="max-w-1400px mx-auto">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

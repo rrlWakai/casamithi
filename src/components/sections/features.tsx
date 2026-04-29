@@ -64,7 +64,7 @@ function FeatureItem({
       {/* Image */}
       <motion.div
         style={{ y: imageY }}
-        className={`relative w-full lg:w-[55%] aspect-[4/3] ${isLeft ? "lg:-ml-12" : "lg:-mr-12"}`}
+        className={`relative w-full lg:w-[55%] aspect-4/3 ${isLeft ? "lg:-ml-12" : "lg:-mr-12"}`}
       >
         <img
           src={feature.image}
@@ -101,7 +101,7 @@ function FeatureItem({
 export function Features() {
   return (
     <section className="py-24 md:py-32 lg:py-48 px-6 md:px-12 lg:px-24 overflow-hidden">
-      <div className="max-w-[1600px] mx-auto">
+      <div className="max-w-1600px mx-auto">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

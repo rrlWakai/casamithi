@@ -45,7 +45,7 @@ function RoomCard({ room, index }: { room: (typeof rooms)[0]; index: number }) {
     >
       <motion.div
         style={{ scale }}
-        className="relative aspect-[3/4] overflow-hidden mb-6"
+        className="relative aspect-3/4 overflow-hidden mb-6"
       >
         <img
           src={room.image}
@@ -80,7 +80,7 @@ function RoomCard({ room, index }: { room: (typeof rooms)[0]; index: number }) {
 export function Rooms() {
   return (
     <section className="py-24 md:py-32 lg:py-48 px-6 md:px-12 lg:px-24 bg-muted">
-      <div className="max-w-[1600px] mx-auto">
+      <div className="max-w-1600px mx-auto">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

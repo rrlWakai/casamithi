@@ -25,7 +25,7 @@ export function Navigation() {
           isScrolled ? "bg-background/95 backdrop-blur-sm" : ""
         }`}
       >
-        <nav className="flex items-center justify-between max-w-[1600px] mx-auto">
+        <nav className="flex items-center justify-between max-w-1600px mx-auto">
           {/* Circular Logo */}
           <motion.a
             href="#"
@@ -65,12 +65,12 @@ export function Navigation() {
               </span>
               <span className="absolute -bottom-1 left-0 w-0 h-px bg-current group-hover:w-full transition-all duration-300" />
             </a>
-            <a href="#stories" className="relative group">
+            {/* <a href="#stories" className="relative group">
               <span className="hover:opacity-80 transition-opacity">
                 Stories
               </span>
               <span className="absolute -bottom-1 left-0 w-0 h-px bg-current group-hover:w-full transition-all duration-300" />
-            </a>
+            </a> */}
             <a
               href="#booking"
               className={`px-6 py-3 transition-all ${

@@ -6,7 +6,7 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 
 interface VideoStory {
   id: number;
@@ -92,10 +92,10 @@ function VideoCard({
 
   return (
     <motion.div
-      className={`relative flex-shrink-0 overflow-hidden cursor-pointer ${
+      className={`relative shrink-0 overflow-hidden cursor-pointer ${
         isFeatured
-          ? "w-[280px] md:w-[320px] lg:w-[380px] h-[420px] md:h-[480px] lg:h-[570px]"
-          : "w-[200px] md:w-[240px] lg:w-[280px] h-[300px] md:h-[360px] lg:h-[420px]"
+          ? "w-280px md:w-[320px] lg:w-380px h-420px md:h-480px lg:h-570px"
+          : "w-200px md:w-240px lg:w-280px h-300px md:h-360px lg:h-420px"
       }`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -119,7 +119,7 @@ function VideoCard({
       />
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent" />
+      <div className="absolute inset-0 bg-linear-to-t from-foreground/80 via-foreground/20 to-transparent" />
 
       {/* Play Icon */}
       <motion.div
@@ -181,7 +181,7 @@ function VideoModal({
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
-      className="fixed inset-0 z-[100] flex items-center justify-center bg-foreground/95 p-4 md:p-8"
+      className="fixed inset-0 z-100 flex items-center justify-center bg-foreground/95 p-4 md:p-8"
       onClick={onClose}
     >
       <motion.div
@@ -214,7 +214,7 @@ function VideoModal({
         </button>
 
         {/* Video Container - Vertical aspect ratio */}
-        <div className="relative aspect-[9/16] bg-foreground">
+        <div className="relative aspect-9/16 bg-foreground">
           <img
             src={story.videoUrl}
             alt={story.title}
@@ -265,7 +265,7 @@ export function VideoStories() {
       ref={containerRef}
       className="py-24 md:py-32 lg:py-48 overflow-hidden"
     >
-      <div className="max-w-[1600px] mx-auto">
+      <div className="max-w-1600px mx-auto">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -285,8 +285,8 @@ export function VideoStories() {
         {/* Horizontal Scroll Container */}
         <div className="relative">
           {/* Gradient Overlays */}
-          <div className="absolute left-0 top-0 bottom-0 w-24 md:w-32 bg-gradient-to-r from-background to-transparent z-10" />
-          <div className="absolute right-0 top-0 bottom-0 w-24 md:w-32 bg-gradient-to-l from-background to-transparent z-10" />
+          <div className="absolute left-0 top-0 bottom-0 w-24 md:w-32 bg-linear-to-r from-background to-transparent z-10" />
+          <div className="absolute right-0 top-0 bottom-0 w-24 md:w-32 bg-linear-to-l from-background to-transparent z-10" />
 
           {/* Stories Track */}
           <motion.div
