@@ -9,7 +9,10 @@ export function Booking() {
   const [guests, setGuests] = useState("2");
 
   return (
-    <section id="booking" className="py-24 md:py-32 lg:py-48 px-6 md:px-12 lg:px-24 bg-accent">
+    <section
+      id="booking"
+      className="py-24 md:py-32 lg:py-48 px-6 md:px-12 lg:px-24 bg-accent"
+    >
       <div className="max-w-[1200px] mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -25,8 +28,8 @@ export function Booking() {
             Reserve Your <span className="italic">Private Escape</span>
           </h2>
           <p className="text-accent-foreground/80 font-sans max-w-lg mx-auto leading-relaxed">
-            Begin your journey to tranquility. Select your dates and let us prepare 
-            your sanctuary.
+            Begin your journey to tranquility. Select your dates and let us
+            prepare your sanctuary.
           </p>
         </motion.div>
 
@@ -43,6 +46,7 @@ export function Booking() {
               Check In
             </label>
             <input
+              title="dates"
               type="date"
               value={checkIn}
               onChange={(e) => setCheckIn(e.target.value)}
@@ -57,6 +61,7 @@ export function Booking() {
               Check Out
             </label>
             <input
+              title="checkout"
               type="date"
               value={checkOut}
               onChange={(e) => setCheckOut(e.target.value)}
@@ -71,6 +76,7 @@ export function Booking() {
               Guests
             </label>
             <select
+              title="guests"
               value={guests}
               onChange={(e) => setGuests(e.target.value)}
               className="w-full px-6 py-4 bg-accent-foreground/10 border border-accent-foreground/20 text-accent-foreground font-sans text-sm focus:outline-none focus:border-accent-foreground/40 transition-colors appearance-none cursor-pointer"
