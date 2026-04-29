@@ -14,35 +14,21 @@ export function About() {
   const ySecondary = useTransform(scrollYProgress, [0, 1], [60, -60]);
 
   return (
-    <section
-      ref={ref}
-      className="relative py-32 md:py-48 px-6 md:px-12 lg:px-24 overflow-hidden"
-    >
+    <section ref={ref} className="py-32 md:py-48 px-6 md:px-12 lg:px-24 ">
       <div className="max-w-1200px mx-auto grid lg:grid-cols-12 gap-16 items-center">
         {/* LEFT — VISUAL */}
         <div className="lg:col-span-6 relative h-520px md:h-620px lg:h-720px">
           {/* Main Image */}
-          <motion.div
-            style={{ y: yMain }}
-            className="absolute inset-0 w-full h-full overflow-hidden"
-          >
-            <img
-              src="public/images/about-main.jpg"
-              alt="Casa Mithi Villa"
-              className="w-full h-full object-cover will-change-transform"
-            />
+          <motion.div style={{ y: yMain }} className="w-full h-full ">
+            <img src="public/images/about-main.jpg" alt="Casa Mithi Villa" />
           </motion.div>
 
           {/* Overlapping Image */}
           <motion.div
             style={{ y: ySecondary }}
-            className="absolute -bottom-12 -right-12 w-[55%] h-[55%] overflow-hidden z-10"
+            className="absolute -bottom-12 -right-12 w-[55%] h-[55%]  z-10"
           >
-            <img
-              src="/images/about-secondary.jpg"
-              alt="Casa Mithi Interior"
-              className="w-full h-full object-cover"
-            />
+            <img src="/images/about-secondary.jpg" alt="Casa Mithi Interior" />
           </motion.div>
 
           {/* Accent line */}

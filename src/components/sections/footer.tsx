@@ -8,7 +8,7 @@ const LOGO_URL =
 export function Footer() {
   return (
     <footer className="py-16 md:py-24 lg:py-32 px-6 md:px-12 lg:px-24 bg-primary">
-      <div className="max-w-[1600px] mx-auto">
+      <div className="max-w-1600px mx-auto">
         {/* Large Circular Logo Display */}
         <motion.div
           initial={{ opacity: 0, scale: 0.98 }}

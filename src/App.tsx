@@ -3,7 +3,7 @@ import { Hero } from "./components/sections/hero";
 import { About } from "./components/sections/about";
 import { Features } from "./components/sections/features";
 import { Gallery } from "./components/sections/gallery";
-// import { VideoStories } from "@/components/sections/video-stories";
+import { VideoStories } from "@/components/sections/video-stories";
 import { Rooms } from "./components/sections/rooms";
 import { Booking } from "./components/sections/booking";
 import { Testimonials } from "./components/sections/testimonials";
@@ -19,7 +19,7 @@ function App() {
       </section>
       <Features />
       <Gallery />
-      {/* <VideoStories /> */}
+      <VideoStories />
       <section id="rooms">
         <Rooms />
       </section>
